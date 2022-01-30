@@ -17,9 +17,7 @@ public class Month {
 		monthCase = monthCase.substring(0, 3);
 				
 		switch (monthCase) {
-		case "sep", "apr", "jun", "nov":
-			out.println(month + " has 30 days.");
-			break;
+
 		case "feb":
 			out.println("Is it a leap year? y/n:");
 			String isLeap = keyboard.next();
@@ -29,9 +27,19 @@ public class Month {
 				out.println(month + " has 28 days.");
 			}
 			break;
-		default:
+			
+		case "sep", "apr", "jun", "nov":
+			out.println(month + " has 30 days.");
+			break;
+			
+		case "jan", "mar", "may", "jul", "aug", "oct", "dec":
 			out.println(month + " has 31 days.");
-			break;		
+			break;
+		
+		default:
+			out.println("Please check that " + month);
+			out.println("is a real month and try again!");
+			break;
 		}
 		
 		keyboard.close();

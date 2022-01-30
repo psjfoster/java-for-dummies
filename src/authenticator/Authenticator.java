@@ -14,7 +14,8 @@ public class Authenticator {
 			if (password != null) {
 				if 	(
 						(username.equals("bburd") && password.equals("swordfish")) ||
-						(username.equals("hritter") && password.equals("preakston"))
+						(username.equals("hritter") && password.equals("preakston")) ||
+						(username.equals("pfoster") && password.equals("logmeinplease"))
 					)
 				{
 					JOptionPane.showMessageDialog(null, "You're in.");
