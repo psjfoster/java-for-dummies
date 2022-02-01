@@ -35,11 +35,11 @@ public class GuessAgain {
 			numGuesses++;
 		}
 		
-		out.print("You win after ");
-		out.println(numGuesses + " guesses.");
+		out.println();
+		out.print("You win! ");
+		out.println("It only took you " + numGuesses + " guesses!");
 		
 		keyboard.close();
-
 	}
 
 }
